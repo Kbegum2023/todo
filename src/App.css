@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightgray;
+}
+
+
+.App {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(24, 23, 23);
+  /* width: 40%; */
+  width: 650px;
+  height: 500px;
+}
+
+.nav {
+  height: 45px;
+  background-color:rgb(18, 170, 94);
+  width:100%;
+  text-align:center;
+  margin-top:0;
+}
+
+.add_task{
+  background-color: white;
+  width: 80%;
+  height: 60px;
+}
+
+input {
+  margin: 15px;
+  font-size: 1.8rem;
+  border: none;
+  border-bottom: 1px solid gray;
+
+}
+
+.add_btn{
+  font-size: 1.5rem;
+  background-color: rgb(18, 170, 94);
+  border: none;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.task_list {
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+li{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+p{
+  width: 100%;
+  max-width: 70%;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.remove_btn{
+  font-size: 1.5rem;
+    background-color: rgb(18, 170, 94);
+    border: none;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+
