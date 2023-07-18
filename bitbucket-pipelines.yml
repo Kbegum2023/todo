@@ -1,0 +1,19 @@
+image: node:14
+
+pipelines:
+  default:
+    - step:
+        name: 'Build and Test'
+        script:
+          - cd $BITBUCKET_CLONE_DIR
+          - npm install
+          - npm run build
+          - npm test
+
+    - step:
+        name: 'Deployment to DigitalOcean'
+        deployment: production
+        script:
+          - echo "Deploying to DigitalOcean..."
+          - scp -r dist/ root@droplet_ip:/var/www/html
+          - ssh root@droplet_ip '159.65.54.223'
